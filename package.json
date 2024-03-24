@@ -3,6 +3,7 @@
   "displayName": "Rive Preview",
   "description": "Show a preview the Rive (.riv) files",
   "version": "0.0.1",
+  "publisher": "Yeikel Uriarte Arteaga",
   "engines": {
     "vscode": "^1.74.0"
   },
