@@ -1,0 +1,12 @@
+#animationControls button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#animationControls button:hover {
+  background-color: #0056b3;
+}

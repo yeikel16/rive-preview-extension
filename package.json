@@ -1,0 +1,58 @@
+{
+  "name": "rive-preview",
+  "displayName": "Rive Preview",
+  "description": "Show a preview the Rive (.riv) files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "rive.rivePreview",
+        "displayName": "Rive Preview",
+        "selector": [
+          {
+            "filenamePattern": "*.riv"
+          }
+        ]
+      }
+    ],
+    "commands": [],
+    "languages": [
+      {
+        "id": "rive",
+        "extensions": [
+          ".riv"
+        ]
+      }
+    ]
+  },
+  "files.associations": {
+    "*.riv": "plaintext"
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint \"src/**/*.ts\"",
+    "watch": "tsc -w -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/text-encoding-utf-8": "^1.0.2",
+    "@types/vscode": "^1.73.0",
+    "@types/vscode-webview": "^1.57.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "eslint": "^8.26.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "text-encoding-utf-8": "^1.0.2"
+  }
+}
