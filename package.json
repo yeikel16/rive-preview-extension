@@ -6,9 +6,18 @@
   "engines": {
     "vscode": "^1.74.0"
   },
+  "icon": "icon.png",
   "categories": [
-    "Other"
+    "Visualization","Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yeikel16/rive-preview-extension.git"
+  },
+  "license": "MIT",
+  "bugs": {    
+    "url": "https://github.com/yeikel16/rive-preview-extension"
+  },
   "main": "./out/extension.js",
   "activationEvents": [],
   "contributes": {
@@ -36,6 +45,15 @@
   "files.associations": {
     "*.riv": "plaintext"
   },
+  "keywords": [
+    "rive",
+    "preview",
+    "riv",
+    "visualization",
+    "load",
+    "file",
+    "canvas"
+  ],
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
